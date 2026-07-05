@@ -1,5 +1,5 @@
 import { motion, type Variants } from "motion/react";
-import Spider from "../../assets/Spider.jpg";
+import profile from "../../assets/profile.jpeg";
 import Social from "../../components/Ui/SocialMedia";
 
 export default function AboutMe() {
@@ -39,8 +39,8 @@ const textUpAnimation:Variants={
             className="h-full w-40 lg:w-50 border-x border-dashed border-gray-300 dark:border-gray-800 "
           >
             <img
-              src={Spider}
-              alt="Spider"
+              src={profile}
+              alt="profile pic"
               className="rounded-full h-full object-cover p-1 bg-gray-300 dark:bg-gray-900 border-2 border-dotted border-gray-300 dark:border-gray-700"
             />
           </motion.div>

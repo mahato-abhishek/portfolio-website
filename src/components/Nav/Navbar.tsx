@@ -13,10 +13,10 @@ export default function Navbar() {
     icon: React.ReactNode;
   };
   const navItems: NavItem[] = [
-    { name: "home", icon: <AiFillHome  size="24"/> },
-    { name: "about", icon: <FaUserCircle size="24"/> },
-    { name: "projects", icon: <FaBriefcase size="24"/> },
-    { name: "contact", icon: <IoSend  size="24"/> },
+    { name: "home", icon: <AiFillHome  size="28"/> },
+    { name: "about", icon: <FaUserCircle size="28"/> },
+    { name: "projects", icon: <FaBriefcase size="28"/> },
+    { name: "contact", icon: <IoSend  size="28"/> },
   ];
 
 
@@ -50,18 +50,18 @@ export default function Navbar() {
       </nav>
     </div>
 
-<div className="h-12 fixed bottom-2  z-50 w-full flex md:hidden items-center justify-center">
-  <nav className="w-fit backdrop-blur-lg h-full border items-center justify-center flex rounded-xl dark:border-gray-700 border-gray-300 ">
-    <ul className="flex gap-4 items-center justify-center font-medium p-2"> 
+<div className="h-fit fixed bottom-2  z-50 w-full flex md:hidden items-center justify-center">
+  <nav className="w-fit backdrop-blur-xl h-full border items-center justify-center flex rounded-full dark:border-gray-700 border-gray-300 ">
+    <ul className="flex gap-4 items-center justify-center font-medium  p-1"> 
           {navItems.map((item) => (
             <li
               key={item.name}
-              className="hover:text-black transition-all duration-300 ease-in-out text-gray-600 dark:text-gray-400 dark:hover:text-white text-sm cursor-pointer  p-1 rounded-lg dark:bg-radial from-gray-700 via-gray-900 to-gray-700 bg-gray-300"
+              className="hover:text-black transition-all duration-300 ease-in-out text-gray-600 dark:text-gray-400 dark:hover:text-white text-sm cursor-pointer  p-2 rounded-full dark:bg-black bg-gray-300"
             >
               <NavLink
                 to={`/${item.name}`}
                 className={({ isActive }) =>
-                  isActive ? "dark:text-white text-black" : ""
+                  isActive ? "dark:text-white text-black " : ""
                 }
               >
                 {item.icon}

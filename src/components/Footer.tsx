@@ -19,7 +19,7 @@ export default function Footer(props:prop) {
       <div className={` text-bold flex items-center justify-center h-full max-w-${props.width} m-auto w-95/100 border-x dark:border-gray-800 border-dashed border-gray-300 p-5`}>
         <Social/>
         </div>
-        <div className="border-t h-12 border-dashed border-gray-300 dark:border-gray-800">
+        <div className="border-t h-14 border-dashed border-gray-300 dark:border-gray-800">
             
             </div>
     </footer>

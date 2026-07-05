@@ -1,5 +1,5 @@
 import {Link} from 'react-router'
-import spider from "../../assets/Spider.jpg"
+import profile from "../../assets/profile.jpeg"
 import Footer from '../../components/Footer'
 import { motion ,type Variants} from 'motion/react'
 
@@ -40,8 +40,8 @@ const textAnimation:Variants={
             }}
             className="border-2 h-full dark:bg-gray-800 bg-gray-200 rounded-full border-dotted dark:border-gray-700 border-gray-400">
             <img
-                src={spider}
-                alt="Spider"
+                src={profile}
+                alt="profile pic"
                 className="rounded-full h-full object-cover p-1"
               />
               </motion.div>
