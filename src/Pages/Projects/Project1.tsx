@@ -1,7 +1,11 @@
 import { motion } from "motion/react";
-import project1 from "../../assets/Project1.png";
+import projectDark from "../../assets/Project-1-dark.png";
+import projectLight from "../../assets/Project-1-light.png";
+import { useTheme } from "../../Context/ThemeContext";
 
 export default function Project1() {
+  const { isDarkMode } = useTheme();
+
   return (
     <>
       <div className="border-b border-dashed border-gray-300 dark:border-gray-800">
@@ -31,7 +35,11 @@ export default function Project1() {
             }}
             className="dark:border-gray-800 border-gray-300 border-dashed p-1 border dark:bg-gray-900 bg-gray-300"
           >
-            <img src={project1} alt="project1" className="rounded" />
+            <img
+              src={isDarkMode ? projectDark : projectLight}
+              alt="project1"
+              className="rounded"
+            />
           </motion.div>
           <p className=" px-2 sm:px-5 font-semibold text-xl">Features</p>
           <p className=" pl-5 md:pl-10 px-2 md:px-5">
